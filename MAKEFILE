@@ -1,0 +1,16 @@
+CC = cc
+FLAGS = -Wall -Wextra -Werror
+
+NAME =
+
+SRCS =
+
+OBJS =
+
+all:
+
+fclean:
+	rm -f
+clean:
+	rm -f
+
