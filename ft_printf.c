@@ -6,10 +6,13 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 04:46:23 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/12 07:42:43 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/16 15:09:23 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int ft_printf(const char *format, ...);
+int ft_printf(const char *format, ...)
+{
+	
+}

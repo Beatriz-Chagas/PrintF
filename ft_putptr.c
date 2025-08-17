@@ -6,13 +6,13 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 05:07:57 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/12 07:42:32 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/16 17:29:27 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	f_putptr(void *ptr)
+int	ft_putptr(void *ptr)
 {
-	
+	ft_putstr(&ptr);
 }
