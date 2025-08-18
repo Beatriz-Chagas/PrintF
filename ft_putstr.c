@@ -6,11 +6,11 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 05:08:01 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/12 08:15:10 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/17 23:35:40 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putstr(char *s)
 {
@@ -23,3 +23,14 @@ int	ft_putstr(char *s)
 		count = ft_putchar(*s++);
 	return (count);
 }
+// int main(void)
+// {
+// 	int len;
+
+// 	len = ft_putstr("Ola mundo");
+// 	ft_putchar('\n');
+// 	ft_putstr("Total impresso: ");
+// 	ft_putnbr(len);
+// 	ft_putchar('\n');
+// 	return (0);
+// }

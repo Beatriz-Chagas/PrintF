@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putchar.c                                          :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 05:07:48 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/12 06:14:22 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/17 23:23:50 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {
-	write (1, c, 1);
+	write (1, &c, 1);
+	return (1);
 }
+// int	main(void)
+// {
+// 	ft_putchar('a');
+// 	return (0);
+// }
