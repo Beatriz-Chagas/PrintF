@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 05:08:01 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/17 23:35:40 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/21 06:41:41 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,10 @@ int	ft_putstr(char *s)
 	if (!s)
 		s = "(null)";
 	while (*s)
-		count = ft_putchar(*s++);
+	{
+		count += ft_putchar(*s);
+		s++;
+	}
 	return (count);
 }
 // int main(void)

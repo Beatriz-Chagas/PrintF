@@ -6,28 +6,28 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 05:07:53 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/17 23:35:04 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/21 07:17:48 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putnbr(int n)
+int	ft_putnbr(long long n)
 {
-	unsigned int	i;
-	int				count;
+	unsigned long long	i;
+	int					count;
 
 	count = 0;
 	if (n < 0)
 	{
-		ft_putchar('-');
-		i = (unsigned int)(-n);
+		count += ft_putchar('-');
+		i = (unsigned long long)(-n);
 	}
 	else
-		i = (unsigned int)n;
+		i = (unsigned long long)n;
 	if (i >= 10)
-		ft_putnbr(i / 10);
-	ft_putchar((i % 10) + '0');
+		count += ft_putnbr(i / 10);
+	count += ft_putchar((i % 10) + '0');
 	return (count);
 }
 // int main(void)
